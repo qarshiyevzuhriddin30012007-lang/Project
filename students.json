@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Ali",
+        "age": 20,
+        "score": 92,
+        "faculty": "IT"
+    },
+    {
+        "name": "Madina",
+        "age": 19,
+        "score": 74,
+        "faculty": "Economics"
+    },
+    {
+        "name": "Sardor",
+        "age": 21,
+        "score": 88,
+        "faculty": "IT"
+    },
+    {
+        "name": "Dilnoza",
+        "age": 20,
+        "score": 67,
+        "faculty": "Math"
+    },
+    {
+        "name": "Jasur",
+        "age": 22,
+        "score": 95,
+        "faculty": "Physics"
+    }
+]
