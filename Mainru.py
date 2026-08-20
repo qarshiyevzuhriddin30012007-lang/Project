@@ -10,4 +10,9 @@ for talaba in studentss:
 
     print(f"{ism}, {ball}")
 
-print("Git hub")
+print("\nGit hub")
+
+
+highest = max(studentss, key=lambda student: student["score"])
+
+print(f"\nEng yuqori ball: {highest['name']} ({highest['score']})")
