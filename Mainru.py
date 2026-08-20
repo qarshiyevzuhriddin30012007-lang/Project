@@ -13,6 +13,8 @@ for talaba in studentss:
 print("\nGit hub")
 
 
-highest = max(studentss, key=lambda student: student["score"])
+highest = max(studentss, key=lambda x: x["score"])
+print(f"\nEng yuqori ball: {highest["name"]} ({highest["score"]})")
 
-print(f"\nEng yuqori ball: {highest['name']} ({highest['score']})")
+lowest = min(studentss, key=lambda x: x["score"])
+print(f"\nEng past ball: {lowest["name"]} ({lowest["score"]})")
