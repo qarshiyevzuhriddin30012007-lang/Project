@@ -1,6 +1,11 @@
 import json
 
-with open("students.json")as file:
-    students = json.load(file)
+with open("studentss.json")as file:
+    studentss = json.load(file)
 
-print(students)
+for talaba in studentss:
+
+    ism = talaba["name"]
+    ball = talaba["score"]
+
+    print(f"{ism}, {ball}")
