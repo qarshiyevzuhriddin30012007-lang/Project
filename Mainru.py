@@ -1,20 +1,38 @@
 import json
 
-with open("studentss.json")as file:
-    studentss = json.load(file)
+def analyze_students():
 
-for talaba in studentss:
+    with open("studentss.json")as file:
+        studentss = json.load(file)
 
-    ism = talaba["name"]
-    ball = talaba["score"]
+    for talaba in studentss:
 
-    print(f"{ism}, {ball}")
+        ism = talaba["name"]
+        ball = talaba["score"]
 
-print("\nGit hub")
+        print(f"{ism}, {ball}")
+
+    print("\nGit hub")
 
 
-highest = max(studentss, key=lambda x: x["score"])
-print(f"\nEng yuqori ball: {highest["name"]} ({highest["score"]})")
+    highest = max(studentss, key=lambda x: x["score"])
+    print(f"\nEng yuqori ball: {highest["name"]} ({highest["score"]})")
 
-lowest = min(studentss, key=lambda x: x["score"])
-print(f"\nEng past ball: {lowest["name"]} ({lowest["score"]})")
+    lowest = min(studentss, key=lambda x: x["score"])
+    print(f"\nEng past ball: {lowest["name"]} ({lowest["score"]})")
+
+    ball = [student["score"] for student in studentss]
+    ortacha = sum(ball) / len(ball)
+
+    print(f"\nTalabalarning o'rtacha bali: {ortacha:.1f}")
+
+    filtered_students = [
+        student["name"]
+        for student in studentss
+        if student["score"] > 80
+    ]
+
+    print("\n80 dan yuqori olganlar:")
+    print(filtered_students)
+
+analyze_students()
